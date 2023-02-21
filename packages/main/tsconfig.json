@@ -1,0 +1,24 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": { "@/*": ["./src/*"], "@/public/*": ["./public/*"], "*": ["./src/*"] },
+    "target": "ES6",
+    "lib": [
+      "dom",
+      "dom.iterable", 
+      "esnext"
+    ],
+    "allowJs": true,
+    "strict": false,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    ".next"
+  ]
+}

@@ -1,0 +1,4 @@
+**/.next
+**/out
+/.eslintrc.js
+**/next.config.js
