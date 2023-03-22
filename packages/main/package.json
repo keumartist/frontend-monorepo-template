@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "lighthouse": "lhci autorun --config-path=./.lighthouserc.js && node lighthouse-printer.js",
     "env:local": "cp .env/.env.local .env.development",
     "env:dev": "cp .env/.env.dev .env.production",
     "env:prod": "cp .env/.env.prod .env.production",
@@ -28,6 +29,7 @@
   },
   "devDependencies": {
     "@emotion/babel-plugin": "^11.3.0",
+    "@lhci/cli": "^0.11.0",
     "@types/node": "18.14.0",
     "@types/react": "^17.0.6",
     "eslint": "^8.33.0",
